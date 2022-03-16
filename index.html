@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form autocomplete="off">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <ul class="name-ul">
+                <li>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                </li>
+                <li>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </li>
+            </ul>
+            <ul class="gender-ul">
+                <li>
+                    <label for="male">MALE</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                </li>
+                <li>
+                    <label for="female">FEMALE</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                </li>
+                <li>
+                    <label for="other">OTHER</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                </li>
+            </ul>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Do you own one of the following?</legend>
+            <ul class="vehicle-ul">
+                <li>
+                    <label for="car">CAR</label>
+                    <input type="checkbox" id="car" name="vehicle">
+                </li>
+                <li>
+                    <label for="bike">BIKE</label>
+                    <input type="checkbox" id="bike" name="vehicle">
+                </li>
+                <li>
+                    <label for="boat">BOAT</label>
+                    <input type="checkbox" id="boat" name="vehicle">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your favorite car manufacturer</legend>
+            <label for="car-select">Choose your favorite car manufacturer:</label>
+            <select name="car-type" id="car-select">
+            <option value="Ford">Ford</option>
+            <option value="BMW">BMW</option>
+            <option value="AUDI">AUDI</option>
+            <option value="Volvo">Volvo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>About you</legend>
+            <label for="about-you">Tell us a bit about yourself</label>
+            <textarea id="about-you" name="about-you" maxlength="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorite browser</legend>
+            <label for="favorite-browser-choice">Choose your favorite browser</label>
+            <input list="browsers" id="favorite-browser-choice" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+
+        <button type="button" id="submit-btn">SUBMIT</button>
+    </form>
+    
+</body>
+</html>
