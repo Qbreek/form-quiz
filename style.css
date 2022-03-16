@@ -1,43 +1,32 @@
-/* global styles */
 * {
   padding: 0;
   margin: 0;
 }
 
-fieldset,
-legend {
-  padding: 10px 10px;
-}
-
-fieldset {
-  min-width: 500px;
-  margin: 10px 10px 10px 10px;
-}
-
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding-top: 20px;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
 li {
   list-style: none;
 }
 
-.name-ul,
-.gender-ul,
-.vehicle-ul {
-  padding: 10px 10px;
-  display: flex;
-  gap: 20px;
-  min-width: 400px;
+fieldset {
+  padding: 20px 20px;
 }
 
-.name-ul {
+legend {
+  padding: 10px 10px;
+}
+
+ul {
+  display: flex;
   flex-direction: column;
-  max-width: 200px;
+  gap: 20px;
 }
 
 .name-ul li {
@@ -45,14 +34,31 @@ li {
   flex-direction: column;
 }
 
-.name-ul input {
-  width: 240px;
-  height: 18px;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  padding: 5px 5px;
+.gender-ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.name-ul label {
-  margin-bottom: 5px;
+.name-ul input {
+  width: 150px;
+  height: 18px;
+}
+
+.vehicle-ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-you {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  margin-top: 10px;
+  padding: 10px 10px;
+  height: 100px;
+  resize: none;
 }

@@ -11,16 +11,16 @@
 <body>
 
     <form autocomplete="off">
-        
+        <h1>Sign up form</h1>
         <fieldset>
             <legend>Personal Information</legend>
             <ul class="name-ul">
                 <li>
-                    <label for="first-name">FIRST NAME</label>
+                    <label for="first-name">First name</label>
                     <input type="text" id="first-name" name="first-name">
                 </li>
                 <li>
-                    <label for="last-name">LAST NAME</label>
+                    <label for="last-name">Last name</label>
                     <input type="text" id="last-name" name="last-name">
                 </li>
             </ul>
@@ -58,7 +58,7 @@
             </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="car-manufacturer">
             <legend>Your favorite car manufacturer</legend>
             <label for="car-select">Choose your favorite car manufacturer:</label>
             <select name="car-type" id="car-select">
@@ -69,10 +69,10 @@
             </select>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="about-you">
             <legend>About you</legend>
-            <label for="about-you">Tell us a bit about yourself</label>
-            <textarea id="about-you" name="about-you" maxlength="50"></textarea>
+            <label for="about-you">Tell us a bit about yourself:</label>
+            <textarea id="about-you" name="about-you" maxlength="50" placeholder="Describe yourself here (Max words 50)"></textarea>
         </fieldset>
 
         <fieldset>
